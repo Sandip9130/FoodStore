@@ -1,0 +1,87 @@
+﻿/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar Styling */
+.brand-logo {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+#navFixed {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 56px; /* Height of the navbar */
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidebar ul {
+    color: white;
+}
+
+.sidebar-logo {
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+    .sidebar ul li {
+        list-style: none;
+        padding: 10px 20px;
+    }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #f8f3f3;
+            display: block;
+            padding: 10px 30px;
+        }
+
+            .sidebar ul li a:hover {
+                background-color: #464646;
+                color: rgb(131, 129, 13);
+                border-radius: 20px;
+            }
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+    .main-content .container {
+        margin-top: 5%;
+    }
+
+#clr {
+    background-color: rgb(255, 221, 221);
+}
+
+/* Collapsed Sidebar */
+.sidebar-collapsed {
+    transform: translateX(-250px);
+}
+
+.main-collapsed {
+    margin-left: 0;
+}

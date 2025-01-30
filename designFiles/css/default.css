@@ -1,0 +1,110 @@
+﻿/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for sliding background images and gradients */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%; /* Three images or gradients */
+    height: 100%;
+    display: flex;
+    transition: transform 3s ease-in-out;
+}
+
+    /* Gradient backgrounds with images */
+    .hero-background div {
+        width: 33.33%; /* Each slide takes up one-third of the container */
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Example gradient backgrounds */
+    .hero-background .slide-1 {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/wp3105448.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-background .slide-2 {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/wp3376127.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-background .slide-3 {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/wp3495549.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/* Content inside the hero section */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+}
+
+    .hero-content h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+.btn-order-now {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+    .btn-order-now:hover {
+        background-color: #218838;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Catagory design */
+

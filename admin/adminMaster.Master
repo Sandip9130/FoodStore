@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="FoodStore.admin.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../designFilesAdmin/css/adminMaster.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Top Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navFixed">
+    <div class="container-fluid">
+      <button class="btn btn-primary" id="toggleSidebar">
+        ☰
+      </button>
+      <div class="d-flex align-items-center">
+        <img src="logo.png" alt="Brand Logo" class="brand-logo">
+        <span class="navbar-brand ms-2" style="color: white;">Food Order</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar bg-dark">
+    <div class="sidebar-header text-center py-3">
+      <img src="logo.png" alt="Brand Logo" class="sidebar-logo">
+    </div>
+    <ul class="list-unstyled-light">
+      <li><a href="AddProduct.aspx" class="nav-link"><span class="bg-primary rounded px-2 py-2 text-light fs-4">+ New Item</span></a></li>
+      <li><a href="dashboard.aspx" class="nav-link">Dashboard</a></li>
+      <li><a href="#" class="nav-link">Sales</a></li>
+      <li><a href="orders.aspx" class="nav-link">Orders</a></li>
+      <li><a href="menuManage.aspx" class="nav-link">Menu Management</a></li>
+      <li><a href="#" class="nav-link">Inquiries</a></li>
+    </ul>
+  </div>
+   
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+    
+    <script src="../designFilesAdmin/js/orders.js"></script>
+    <script src="../designFilesAdmin/js/menuManage.js"></script>
+</body>
+</html>
